@@ -1,0 +1,43 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 26/02/2021 04:24 a.m
+* Fecha  Final: 26/02/2021 04:44 a.m
+* Descripcion:
+**/
+body {
+}
+
+.lbl {
+	display: inline-block;
+	width: 65px;
+	height: 33px;
+	background: #9b5151;
+	border-radius: 100px;
+	cursor: pointer;
+	position: relative;
+	transition: 0.2s;
+}
+
+.lbl::after {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 100px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	transition: 0.2s;
+}
+
+#switch:checked + .lbl::after {
+	left: 36px;
+}
+
+#switch:checked + .lbl {
+	background: #00c8b1;
+}
+#switch {
+	display: none;
+}

@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #edeae9;
+}
+.container {
+	position: relative;
+	border: 2px solid #3d36f2;
+	height: 300px;
+	width: 500px;
+	top: 30%;
+	left: 30%;
+}
+
+.tit-principal {
+	/* margin auto valores */
+	width: 20%;
+	margin: auto;
+}
+
+/* imagen responsive */
+.responsive {
+	height: auto;
+	max-width: 100%;
+}
+
+.polaroid {
+	position: relative;
+	background-color: #fff;
+	width: 300px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 15px;
+	box-shadow: 5px 4px 10px #e9a98e;
+	display: block;
+	/* transition-duration: 1s; */
+	transition: transform 1s;
+	/* transition: transform 2s; */
+	animation-name: animacionSkew;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+}
+
+div.polaroid:hover {
+	/* transform: translateX(50px); */
+	transform: rotate(-20deg);
+	/*transform: scale(1.1, 1.1);*/
+}
+
+.polaroid img:hover {
+	filter: grayscale(100%);
+}
+
+.texto {
+	text-align: center;
+}
+
+.txt-img {
+	color: #fff;
+	position: absolute;
+	top: 5%;
+	right: 10px;
+	/*left: 16px;  */
+	font-size: 21px;
+}
+
+@keyframes animacionSkew {
+	0% {
+		transform: skewX(20deg);
+	}
+	100% {
+		transform: skewY(-20deg);
+	}
+}

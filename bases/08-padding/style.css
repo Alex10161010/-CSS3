@@ -1,0 +1,35 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 27/02/2021 3:00 p.m
+* Fecha  Final: 27/02/2021 6:00 p.m
+* Descripcion:
+
+	PADDING:
+	Es el margen interno de los elementos
+
+
+	existe diferentes formas de ocupar el padding
+	1.- padding: arriba,derecha, abajo, izquierda;
+	2.- padding: 10px; Indica 10 pixeles al rededor del elemento
+	3.- padding-top: 10 px; en la parte de arriba
+
+
+
+**/
+.container {
+	position: relative;
+	border: 2px solid #7db34d;
+	height: 300px;
+	width: 500px;
+	padding: 20px;
+	top: 30%;
+	left: 30%;
+}
+
+.img-cat {
+	position: absolute;
+	width: 300px;
+}
+.tit-principal {
+	position: absolute;
+}

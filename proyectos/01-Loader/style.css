@@ -1,0 +1,58 @@
+* {
+	box-sizing: border-box;
+}
+
+.loader-container {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+}
+
+.loader-container .loader1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	border: 4px solid #04ac7754;
+	border-top-color: #04ac77;
+	border-left-color: #04ac77;
+	border-radius: 50%;
+	animation-name: girar;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.loader-container .loader2 {
+	position: absolute;
+	top: 65%;
+	left: 65%;
+	width: 70%;
+	height: 70%;
+	border: 4px solid #cabe1863;
+	border-top-color: #cabe18;
+	border-left-color: #cabe18;
+	border-radius: 50%;
+	animation-name: girarReves;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes girar {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes girarReves {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}

@@ -1,0 +1,46 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 26/02/2021 01:03 a.m
+* Fecha  Final:
+* Descripcion:
+
+    border: solid red 1px;
+**/
+
+h1 {
+	border: solid red 1px;
+}
+
+h2 {
+	border: double #6e0d25 6px;
+}
+h3 {
+	border: dotted #7033ff 10px;
+}
+
+p {
+	border: dashed #7033ff 8px;
+}
+
+/* Quitar bordes */
+
+.bordes {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 150px;
+	height: 150px;
+	border: solid #9a7fe7 5px;
+	border-top-style: dashed;
+	/* border-left-style: dotted;
+	border-left-color: #f7604f; */
+	border-bottom: dotted #f7604f;
+}
+
+.bordes2 {
+	width: 150px;
+	height: 150px;
+	/* border: solid #eee 10px; */
+	border-radius: 50%;
+	border: dotted #eee 10px;
+}

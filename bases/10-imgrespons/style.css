@@ -1,0 +1,31 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	position: relative;
+	border: 2px solid #3d36f2;
+	height: 300px;
+	width: 500px;
+	top: 30%;
+	left: 30%;
+}
+
+.img-cat {
+	position: relative;
+	margin: 10px;
+	border-radius: 10px;
+}
+.tit-principal {
+	/* margin auto valores */
+	width: 20%;
+	margin: auto;
+}
+
+/* imagen responsive */
+.responsive {
+	height: auto;
+	max-width: 100%;
+}

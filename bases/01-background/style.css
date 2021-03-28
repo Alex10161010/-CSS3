@@ -1,0 +1,25 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 26/02/2021 01:03 a.m
+* Fecha  Final:
+* Descripcion:
+**/
+body {
+	/* 	background-image: url('./descarga.png'); */
+	background-repeat: no-repeat; /* Para que no se repita */
+	background-color: rgb(187, 184, 184); /* color de fondo */
+	background-position: center;
+	background-attachment: fixed;
+	background-size: contain; /* tamaño */
+	/* Gradiantes
+		top
+		bottom
+		left
+		right
+	*/
+	background: linear-gradient(to bottom, red, yellow, #fff);
+}
+
+.space {
+	height: 600px;
+}

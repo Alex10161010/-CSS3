@@ -1,0 +1,27 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 26/02/2021 04:24 a.m
+* Fecha  Final:
+* Descripcion:
+**/
+
+h1 {
+	background-color: cyan;
+	color: darkgreen;
+}
+
+h2 {
+	background-color: #00ce23;
+	color: darkgreen;
+}
+
+p {
+	text-align: center;
+	color: rgb(20, 60, 0);
+}
+
+h3 {
+	text-align: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.1);
+}

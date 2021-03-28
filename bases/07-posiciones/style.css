@@ -1,0 +1,52 @@
+/**
+* Autor: EAMM
+* Fecha inicio: 27/02/2021 3:00 p.m
+* Fecha  Final: 27/02/2021 3:40 p.m
+* Descripcion:
+
+
+Existen dos tipos de elementos en html
+	los elementos por bloque:
+	que siempre empiezan en una nueva linea y ocupan todo el espacio disponible
+	*h1
+
+
+	los elementos en linea:
+	pero ocupan el espacio necesario para mostrar su contenido
+
+
+	Con el css podemos modificar la posiciones de los elementos
+	las propiedades que podemos ocuapar son:
+
+	static: es el valor por defecto que me da el posicion y no esta posicionado en un valor especifico es como el valor lo comprende
+	relative: esta se comporta de la misma manera que la static en esta podemos agregar mas propiedades como a la derecha, izquierda, arriba, abajo
+
+	fixed: puede posicionar cual quier elemento en la ventana del navegador y se quedara hay incluso cuando nos sotros hagamos scroll
+
+	absolut: es el valor mas mañoso se comporta como un fixed pero no se queda pegado a a la ventan del su navegador sino del elemento del bloque antesesor
+**/
+.container {
+	position: relative;
+	border: 1px solid red;
+	height: 300px;
+}
+
+.img-cat {
+	position: relative;
+	/* top: 10px;
+	right: 20px;
+	left: 10px; */
+}
+.tit-principal {
+	position: absolute;
+	top: 0;
+	left: 33%;
+	right: 20%;
+}
+
+.services-container {
+	background-image: url('public/img/svg/business.svg');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 500px;
+}
