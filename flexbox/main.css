@@ -1,0 +1,108 @@
+.flex-container {
+	display: flex;
+	/* 	flex-direction: row;
+	flex-wrap: wrap; */
+	flex-flow: row wrap;
+	height: 400px;
+	/* alineacion en eje x */
+	justify-content: flex-start;
+	/* alineacion en eje y */
+	align-items: center;
+	background-color: antiquewhite;
+	padding: 10px;
+	border: 2px solid black;
+}
+
+.flex-container div {
+	background-color: gainsboro;
+	width: 100px;
+	margin: 10px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 30px;
+	border: 2px solid black;
+}
+
+/* Los layaut trabajan en una sola dimension  ya sea filas o columnas
+
+Por defecto se le aplica la propiedad
+
+para mostrar los hijo en una fila
+	flex-direction:row
+para mostrar los hijo en columnas
+	flex-direction:column;
+mostrar las fila al reves
+	flex-direction:row-reverse;
+
+si hay mas hijo y estos no caben en la fila, que salten a otra fila
+	flex-wrap: wrap;
+que todos los hijos quepan en una sola fila
+	flex-wrap: nowrap;
+una forma de escribir estas dos propiedades (flex-direction && flex-wrap)
+	flex-flow: row wrap;
+
+Alineacion en el eje X
+de esta forma podremos alinear los objectos hijos de forma horizontal
+	justify-content: center;
+alineacion hacia la izquierda
+	justify-content: flex-start;
+alineacion hacia la derecha
+	justify-content: flex-end;
+Distribuir items uniformemente Los items tienen el mismo espacio a su alrededor
+	justify-content: space-around;
+
+Alineacion en el eje Y
+ 	CENTRAR
+	align-items:center;
+coloca los items en la parte de arriba
+	align-items:flex-start;
+coloca los items en la parte de hasta abajo
+	align-items:flex-end;
+los items toman el alto que tiene el padre
+	align-items:stretch;
+los items toman la base
+	align-items:baseline;
+
+
+La propiedad CSS align-content ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal.
+Alineacion de filas (row)
+	Distribuye las líneas a lo largo del eje transversal, igualmente espaciados
+	align-content: space-between;
+
+	Distribuye las líneas a lo largo del eje transversal, de principio a fin
+	align-content: space-between;
+
+	Ajusta las líneas al rededor del centro del eje transversal
+	align-content: center;
+
+	Ajusta las líneas desde el inicio del eje transversal
+	align-content: flex-start;
+
+propiedades para lo hijos
+
+podemos modificar el orden de los items
+	style="order: 4";
+
+La propiedad flex-grow de CSS especifica el factor de crecimiento de un
+elemento flexible (que tiene asignado display:flex), en su dirección
+principal. El factor de crecimiento especifica qué cantidad del espacio restante dentro del contenedor flexible, debería ocupar el item en cuestión.
+podemos indicar el spacio de cada item
+	flex-grow: 10;
+
+
+La propiedad de CSS flex-basis especifíca la base flexible, la cual es el
+tamaño inicial de un elemento flexible. Ésta propiedad determina el
+tamaño de una caja de contenidos a no ser que se haya especificado de otra
+forma usando box-sizing.
+	flex-basis:0;
+
+La propiedad CSS flex es una propiedad resumida que indica la capacidad de
+un elemento flexible para alterar sus dimensiones y llenar el espacio
+disponible. Los elementos flexibles pueden ser estirados para utilizar el
+espacio disponible proporcional a su factor de crecimiento flexible o su
+factor de contracción flexible para evitar desbordamiento.
+
+Tres valores: flex-grow | flex-shrink | flex-basis
+flex: 2 2 10%;
+
+	*/
