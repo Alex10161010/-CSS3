@@ -1,6 +1,6 @@
 const form = document.getElementById('form');
 
-form.addEventListener('submit', e => {
+form.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	const firstName = form['firstname'].value;
@@ -22,7 +22,7 @@ form.addEventListener('submit', e => {
 
 	if (email === '') {
 		addErrorTo('email', 'Email is required');
-	} else if (!isValid(email)) {
+	} else if (!isValido(email)) {
 		addErrorTo('email', 'Email is not valid');
 	} else {
 		removeErrorFrom('email');
@@ -35,20 +35,21 @@ form.addEventListener('submit', e => {
 	}
 });
 
-function addErrorTo(field, message) {
-	const formControl = form[field].parentNode;
+const addErrorTo = (elemento, mensaje) => {
+	const formControl = form[elemento].parentNode;
 	formControl.classList.add('error');
 
 	const small = formControl.querySelector('small');
-	small.innerText = message;
-}
+	small.innerText = mensaje;
+};
 
-function removeErrorFrom(field) {
-	const formControl = form[field].parentNode;
+const removeErrorFrom = (elemento) => {
+	const formControl = form[elemento].parentNode;
 	formControl.classList.remove('error');
-}
+};
 
-function isValid(email) {
-	var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const isValido = (email) => {
+	var re =
+		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	return re.test(String(email).toLowerCase());
-}
+};
