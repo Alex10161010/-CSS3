@@ -1,0 +1,64 @@
+/* La funcion lleva un retorna un valor*/
+@function size($value){
+    @return $value*$unit;
+}
+
+
+
+
+/* Mixin: nos permite crea bloques de estilos que podemos incluir y reutilizar */
+@mixin reset-pm {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+
+    .col{
+        width: 50%;
+    }
+
+    .col-30{
+        width: 30%;
+    }
+
+    .col-70{
+        width: 70%;
+    }
+}
+
+.m-auto{
+    margin: 0 auto;
+}
+
+
+/* para crear apartir de operaciones diferentes style de margin y padding */
+@for $i from 1 to $limit{
+    .m-#{$i}{
+        margin: $i * $unit;
+    }
+}
+
+/* padding */
+@for $i from 1 to $limit{
+    .p-#{$i}{
+        padding: $i * $unit;
+    }
+}
+
+/* padding top y botton */
+@for $i from 1 to $limit{
+    .py-#{$i}{
+        padding: $i * $unit 0;
+    }
+}
+
+
+/* anchos */
+@for $i from 1 to 4{
+    .w-#{$i}{
+        width: $i * 25%;
+    }
+}
